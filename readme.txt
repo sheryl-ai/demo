@@ -5,8 +5,3 @@ Git tracks changes of files.
 
 
 
-
-
-
-
-fuck

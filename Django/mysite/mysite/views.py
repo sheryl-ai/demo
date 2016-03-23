@@ -1,3 +1,5 @@
+from django.template.loader import get_template
+from django.template import Context
 from django.http import HttpResponse
 import datetime
 
@@ -8,7 +10,10 @@ def hello(request):
     return HttpResponse("Hello, world!!")
 
 def cur_time(request):
-    return HttpResponse(datetime.datetime.now())
+    now = datetime.datetime.now()
+    t = get_template('abc.html')
+    html = t.render(Context({'current_date': now}))
+    return HttpResponse(html)
 
 def cur_time_ahead(request, offset):
     try:

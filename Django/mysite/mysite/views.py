@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 import datetime
 
-def homepage_view(request):
+def homepage(request):
     return render_to_response('base.html')
 
 def cur_time(request):

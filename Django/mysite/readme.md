@@ -1,4 +1,22 @@
--- When i need to start a database
+--  RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances
+    
+    To solve this question
+
+    CHANGE
+
+    urlpatterns = patterns(
+        (r'^$', home_pate),
+        (r'^time/$', cur_time),
+    )
+
+    INTO
+
+    urlpatterns = [
+        url(r'^$', home_pate),
+        url(r'^time/$', cur_time),
+    ]
+
+-- When I need to start a database
     
     python manage.py startapp books
 
@@ -81,3 +99,9 @@
     //delete an object
 
 
+
+create the superUser
+
+from django.contrib.auth.models import User
+
+user = User.objects.create_superuser('name', 'emailname@demon.com', 'pwd')

@@ -10,6 +10,9 @@ class User (models.Model):
     class Meta:
         ordering = ['name']
 
+    class Admin:
+        pass
+
 class Publisher(models.Model):
     name = models.CharField(max_length=30)
     address = models.CharField(max_length=50)

@@ -1,8 +1,10 @@
 from django.conf.urls import *
+from django.contrib import admin
 from mysite.views import *
 
-urlpatterns = patterns('',
-        (r'^$', homepage),
-        (r'^time/$', cur_time),
-        (r'^time/plus/(\d{1,5})/$', cur_time_ahead)
-)
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', homepage),
+    url(r'^time/$', cur_time),
+    url(r'^time/plus/(\d{1,5})/$', cur_time_ahead),
+]

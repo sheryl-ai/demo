@@ -1,5 +1,6 @@
 from django.conf.urls import *
 from django.contrib import admin
+admin.autodiscover()
 from mysite.views import *
 
 urlpatterns = [

@@ -1,3 +1,10 @@
+-- start a project
+
+    django-admin.py startproject mysite
+
+-- run as a server
+    python manage.py runserver 0.0.0.0:80
+    
 --  RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances
     
     To solve this question

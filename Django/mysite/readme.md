@@ -70,7 +70,7 @@
 
         python manage.py sqlall books
         //if the Django is a new version, Use
-        //python manage.py sqlmigrage books 0001_initial
+        //python manage.py sqlmigrate books 0001_initial
 
     If we want to migrate the database
         python manage.py syncdb

@@ -73,7 +73,7 @@ int main() {
 - Three
 
 [百度](http://www.baidu.com)
-![这是一个图片](http://cn.bing.com/images/search?q=%E7%AB%A5%E5%B9%B4%E8%83%8C%E6%99%AF&view=detailv2&&id=B17E58D114488A92CD22ABFCA154DC1E77BC8651&selectedIndex=0&ccid=bSmA0emb&simid=608010049702005270&thid=OIP.M6d2980d1e99bc2e1b90cdd7e4116103fo0&ajaxhist=0)
+![这是一个图片](http://www.23yy.com/upload/2015/04/01/50dd1504-463c-4547-9873-ef7555fc6451.jpg)
 在 Markdown 中，插入链接只需要使用 [显示文本](连接地址)这种格式，
 插入图片只需要使用![图片描述](图片链接地址)这种格式即可,其中前者对应于
 HTML中的a标签，后者对应img标签，方括号中的图片描述为img标签的的alt属性值

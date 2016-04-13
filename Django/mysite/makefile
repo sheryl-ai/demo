@@ -7,3 +7,7 @@ migrate: check
 	python manage.py migrate
 shell: manage.py
 	python manage.py shell
+admin: 
+	python manage.py createsuperuser
+changepassword:
+	python manage.py changepassword admin

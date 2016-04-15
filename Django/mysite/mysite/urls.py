@@ -20,5 +20,6 @@ from mysite import views
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^$', views.homepage),
+    url(r'^[\s\S]*$', views.NotFound),
     url(r'^admin/', admin.site.urls),
 ]

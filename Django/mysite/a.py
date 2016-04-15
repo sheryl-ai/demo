@@ -1,3 +1,11 @@
 from django.db import connection
 
-cursor = connection.cursor()
+def fun(a, b):
+    print a, b
+
+def fun(a):
+    print a
+
+fun(3)
+fun(1, 2)
+#cursor = connection.cursor()

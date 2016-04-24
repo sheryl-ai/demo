@@ -3,7 +3,7 @@ public class Singleton{
 
     private Singleton() {}
 
-    private static Singleton getInstance() {
+    public static Singleton getInstance() {
         return instance;
     }
 }
@@ -13,7 +13,7 @@ class Singleton1{
 
     private Singleton1() {}
 
-    private static synchronized Singleton1 getInstance() {
+    public static synchronized Singleton1 getInstance() {
         if (instance == null) {
             instance = new Singleton1();
         }
@@ -26,7 +26,7 @@ class Singleton2{
 
     private Singleton2() {}
 
-    private static Singleton2 getInstance() {
+    public static Singleton2 getInstance() {
         if (instance == null) {
             synchronized(Singleton.class) {
                 if (instance == null) {
@@ -44,7 +44,7 @@ class Singleton3{
 
     private Singleton3() {}
 
-    private static Singleton3 getInstance() {
+    public static Singleton3 getInstance() {
         if (cnt < 3) {
             synchronized(Singleton.class) {
                 if (instance[cnt] == null) {

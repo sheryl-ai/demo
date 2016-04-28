@@ -4,7 +4,6 @@ public class LoudspeakerObserver implements Observer{
 	@Override
 	public void update(double temperature) {
 		Loudspeaker(temperature);
-		this.ceil = temperature;
 	}
 	
 	public LoudspeakerObserver(double ceil) {

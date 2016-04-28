@@ -17,6 +17,7 @@ public class Main {
 			thermometer.setTemperature(temperature / 100.0);
 		}
 		
+        lineChart.showLineChart();
 		temperatureLogger.showLog();
 	}
 }

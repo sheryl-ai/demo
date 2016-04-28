@@ -15,10 +15,11 @@ public class LineChartObserver implements Observer{
 		temperatureList.add(this.temperature);
 	}
 	
-	public void showLineChart(double temperature) {
-		DecimalFormat df = new DecimalFormat("#.00");
+	public void showLineChart() {
+		DecimalFormat df = new DecimalFormat("#0.00");
 		for (int i = 1; i < temperatureList.size(); ++i) {
-			System.out.print(df.format((double)temperatureList.indexOf(i) - (double)temperatureList.indexOf(i - 1)) + " ");
+			System.out.print(df.format((double)temperatureList.get(i) - (double)temperatureList.get(i - 1)) + " ");
 		}
+        System.out.println("");
 	}
 }
